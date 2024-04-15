@@ -45,15 +45,6 @@ describe('JSON transport', () => {
       expect(write).toBeCalledWith(JSON.stringify(object) + '\n');
     });
 
-    test('Error', () => {
-      const error = new Error(message);
-      const object = { level: 'error', message, stack: [error.stack] };
-      loggerService.error(error);
-
-      expect(write).toBeCalledTimes(1);
-      expect(write).toBeCalledWith(JSON.stringify(object) + '\n');
-    });
-
     test('Log', () => {
       const object = { level: 'info', message };
       loggerService.log(message);

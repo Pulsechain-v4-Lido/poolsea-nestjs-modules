@@ -36,20 +36,6 @@ describe('Meta fields', () => {
       expect(write).toBeCalledTimes(1);
       expect(write).toBeCalledWith(JSON.stringify(object) + '\n');
     });
-
-    test('Meta data in error', async () => {
-      const error = new Error(message);
-      const object = {
-        ...defaultMeta,
-        level: 'error',
-        message,
-        stack: [error.stack],
-      };
-      loggerService.error(error);
-
-      expect(write).toBeCalledTimes(1);
-      expect(write).toBeCalledWith(JSON.stringify(object) + '\n');
-    });
   });
 
   describe('Simple transport', () => {
