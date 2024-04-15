@@ -4,14 +4,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
-  "homepage": "https://github.com/lidofinance/lido-nestjs-modules",
+  "homepage": "https://github.com/Pulsechain-v4-Lido/poolsea-nestjs-modules",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lidofinance/lido-nestjs-modules.git",
-    "directory": "packages/offchain-key-storage-client"
+    "url": "https://github.com/Pulsechain-v4-Lido/poolsea-nestjs-modules.git",
+    "directory": "packages/offchain-key-storage-clien"
   },
   "bugs": {
-    "url": "https://github.com/lidofinance/lido-nestjs-modules/issues"
+    "url": "https://github.com/Pulsechain-v4-Lido/poolsea-nestjs-modules/issues"
   },
   "sideEffects": false,
   "keywords": [
