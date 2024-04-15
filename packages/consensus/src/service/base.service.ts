@@ -12,7 +12,6 @@ import { ConsensusMethodArgs } from '../interfaces/consensus.interface';
 import { ConsensusModuleOptions } from '../interfaces/module.interface';
 import { ConsensusSubscribeCallback } from '../interfaces/subscribe.interface';
 import { ConsensusService } from '../service/consensus.service';
-import {AbortSignal} from "node-fetch/externals";
 
 @Injectable()
 export class ConsensusBaseService {

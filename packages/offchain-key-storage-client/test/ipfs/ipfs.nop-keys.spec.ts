@@ -2,7 +2,10 @@
 import { Test } from '@nestjs/testing';
 import { FetchModule } from '@poolsea-nestjs/fetch';
 import { IpfsNopKeysService, IpfsNopKeysModule } from '../../src';
-import { IpfsGeneralService, IpfsModule } from '@poolsea-nestjs/ipfs-http-client';
+import {
+  IpfsGeneralService,
+  IpfsModule,
+} from '@poolsea-nestjs/ipfs-http-client';
 
 describe('Ipfs service', () => {
   let ipfsService: IpfsNopKeysService;
