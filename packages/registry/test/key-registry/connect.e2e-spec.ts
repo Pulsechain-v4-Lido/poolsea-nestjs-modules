@@ -62,7 +62,7 @@ describe('Registry', () => {
   });
 
   test('Update', async () => {
-    await registryService.update(6912872);
+    await registryService.update(18951247);
 
     await compareTestMetaData(registryService, { meta: meta });
 
