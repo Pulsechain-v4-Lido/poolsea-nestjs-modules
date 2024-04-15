@@ -1,5 +1,5 @@
 {
-  "name": "@lido-nestjs/validators-registry",
+  "name": "@poolsea-nestjs/validators-registry",
   "version": "0.0.0-semantic-release",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,9 +15,9 @@
   },
   "sideEffects": false,
   "keywords": [
-    "lido",
-    "lido-nestjs",
-    "lido-nestjs-modules",
+    "poolsea",
+    "poolsea-nestjs",
+    "poolsea-nestjs-modules",
     "lidofinance"
   ],
   "files": [
@@ -28,9 +28,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@lido-nestjs/consensus": "workspace:*",
-    "@lido-nestjs/di": "workspace:*",
-    "@lido-nestjs/utils": "workspace:*",
+    "@poolsea-nestjs/consensus": "workspace:*",
+    "@poolsea-nestjs/di": "workspace:*",
+    "@poolsea-nestjs/utils": "workspace:*",
     "@types/stream-json": "^1.7.4",
     "stream-chain": "^2.2.5",
     "stream-json": "^1.8.0",

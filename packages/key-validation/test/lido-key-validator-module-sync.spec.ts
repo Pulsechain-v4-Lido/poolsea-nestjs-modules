@@ -7,9 +7,9 @@ import {
   MultiThreadedKeyValidatorExecutor,
   SingleThreadedKeyValidatorExecutor,
 } from '../src';
-import { LidoContractModule } from '@lido-nestjs/contracts';
+import { LidoContractModule } from '@poolsea-nestjs/contracts';
 import { getDefaultProvider } from '@ethersproject/providers';
-import { InterfaceTag } from '@lido-nestjs/di';
+import { InterfaceTag } from '@poolsea-nestjs/di';
 import { Type, Abstract } from '@nestjs/common';
 
 describe('LidoKeyValidator sync module initializing', () => {

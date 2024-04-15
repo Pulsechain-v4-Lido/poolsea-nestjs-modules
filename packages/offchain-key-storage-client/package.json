@@ -1,5 +1,5 @@
 {
-  "name": "@lido-nestjs/offchain-key-storage-client",
+  "name": "@poolsea-nestjs/offchain-key-storage-client",
   "version": "0.0.0-semantic-release",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,9 +15,9 @@
   },
   "sideEffects": false,
   "keywords": [
-    "lido",
-    "lido-nestjs",
-    "lido-nestjs-modules",
+    "poolsea",
+    "poolsea-nestjs",
+    "poolsea-nestjs-modules",
     "lidofinance"
   ],
   "files": [
@@ -28,7 +28,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@lido-nestjs/ipfs-http-client": "workspace:*",
+    "@poolsea-nestjs/ipfs-http-client": "workspace:*",
     "ethers": "^5.5.4"
   },
   "peerDependencies": {

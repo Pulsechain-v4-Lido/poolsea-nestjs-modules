@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import {z, ZodTypeDef} from 'zod';
 import { ZodType } from 'zod/lib/types';
 
 /**
@@ -6,8 +6,8 @@ import { ZodType } from 'zod/lib/types';
  *
  * onFail must throw Error
  */
-export const parseAsTypeOrFail = <Output, Def, Input>(
-  type: ZodType<Output, Def, Input>,
+export const parseAsTypeOrFail = <Output, Input>(
+  type: ZodType<Output, ZodTypeDef, Input>,
   data: unknown,
   onFail: (error: z.ZodError) => never,
 ) => {

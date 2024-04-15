@@ -11,7 +11,7 @@ import {
   InterfaceTag,
   InterfaceFromTag,
   isInterfaceTag,
-} from '@lido-nestjs/di';
+} from '@poolsea-nestjs/di';
 import { Type, Abstract } from '@nestjs/common';
 
 describe('KeyValidator sync module initializing', () => {

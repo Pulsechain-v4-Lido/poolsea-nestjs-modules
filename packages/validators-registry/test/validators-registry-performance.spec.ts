@@ -9,12 +9,12 @@ import {
 } from '../src';
 import { MikroORM } from '@mikro-orm/core';
 import { migrations } from './helpers/migrations';
-import { ConsensusModule, ConsensusService } from '@lido-nestjs/consensus';
-import { FetchModule } from '@lido-nestjs/fetch';
+import { ConsensusModule, ConsensusService } from '@poolsea-nestjs/consensus';
+import { FetchModule } from '@poolsea-nestjs/fetch';
 import { blockA, headerA } from './fixtures/consensus';
 import { noop } from './helpers/noop';
 import { createStateValidators } from './helpers/create-validators';
-import { withTimer } from '@lido-nestjs/utils';
+import { withTimer } from '@poolsea-nestjs/utils';
 
 describe('StorageModule - performance tests', () => {
   jest.setTimeout(1000000);

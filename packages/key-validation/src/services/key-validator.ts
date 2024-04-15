@@ -4,7 +4,7 @@ import {
   KeyValidatorInterface,
   Key,
 } from '../interfaces';
-import { ImplementsAtRuntime } from '@lido-nestjs/di';
+import { ImplementsAtRuntime } from '@poolsea-nestjs/di';
 
 @Injectable()
 @ImplementsAtRuntime(KeyValidatorInterface)

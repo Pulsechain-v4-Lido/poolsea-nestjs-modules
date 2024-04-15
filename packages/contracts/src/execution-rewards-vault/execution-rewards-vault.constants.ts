@@ -1,4 +1,4 @@
-import { CHAINS } from '@lido-nestjs/constants';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const EXECUTION_REWARDS_VAULT_CONTRACT_TOKEN =
   Symbol('registryContract');

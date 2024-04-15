@@ -1,4 +1,4 @@
-import { FetchService } from '@lido-nestjs/fetch';
+import { FetchService } from '@poolsea-nestjs/fetch';
 import { Injectable } from '@nestjs/common';
 import { Result, IpfsFileData, isIpfsFileData } from './interfaces';
 

@@ -6,7 +6,7 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/validators-registry
+yarn add @poolsea-nestjs/validators-registry
 ```
 
 ## Interface
@@ -49,9 +49,9 @@ import { Module } from '@nestjs/common';
 import {
     StorageModule,
     ValidatorsRegistryModule,
-} from '@lido-nestjs/validators-registry';
-import { ConsensusModule } from '@lido-nestjs/consensus';
-import { FetchModule } from '@lido-nestjs/fetch';
+} from '@poolsea-nestjs/validators-registry';
+import { ConsensusModule } from '@poolsea-nestjs/consensus';
+import { FetchModule } from '@poolsea-nestjs/fetch';
 import { MyService } from './my.service';
 import { MikroOrmModule } from '@mikro-orm/nestjs';
 
@@ -80,7 +80,7 @@ export class MyModule {}
 
 // my.service.ts
 import { Injectable } from '@nestjs/common';
-import { ValidatorsRegistryInterface } from '@lido-nestjs/validators-registry';
+import { ValidatorsRegistryInterface } from '@poolsea-nestjs/validators-registry';
 
 @Injectable()
 export class MyService {

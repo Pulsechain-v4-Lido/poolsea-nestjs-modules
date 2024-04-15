@@ -29,7 +29,7 @@ import { INTERFACE_MAP_KEY, INTERFACE_TAG } from '../di.constants';
 export const createInterface = <I>(name: string): InterfaceTag<I> => {
   const id = Symbol.for(name);
 
-  const _global = global as globalThis.Global &
+  const _global = global as any as globalThis.Global &
     Record<symbol, Map<symbol, InterfaceTag<any>>>;
 
   if (!_global[INTERFACE_MAP_KEY]) {

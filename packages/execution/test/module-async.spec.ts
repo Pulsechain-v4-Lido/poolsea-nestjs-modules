@@ -9,7 +9,7 @@ import {
   RequestPolicy,
   SimpleFallbackJsonRpcBatchProvider,
 } from '../src';
-import { nullTransport, LoggerModule } from '@lido-nestjs/logger';
+import { nullTransport, LoggerModule } from '@poolsea-nestjs/logger';
 import {
   DynamicModule,
   Injectable,

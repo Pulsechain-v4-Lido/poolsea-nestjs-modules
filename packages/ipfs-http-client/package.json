@@ -1,5 +1,5 @@
 {
-  "name": "@lido-nestjs/ipfs-http-client",
+  "name": "@poolsea-nestjs/ipfs-http-client",
   "version": "0.0.0-semantic-release",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,9 +15,9 @@
   },
   "sideEffects": false,
   "keywords": [
-    "lido",
-    "lido-nestjs",
-    "lido-nestjs-modules",
+    "poolsea",
+    "poolsea-nestjs",
+    "poolsea-nestjs-modules",
     "lidofinance"
   ],
   "files": [
@@ -28,8 +28,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@lido-nestjs/di": "workspace:*",
-    "@lido-nestjs/fetch": "workspace:*"
+    "@poolsea-nestjs/di": "workspace:*",
+    "@poolsea-nestjs/fetch": "workspace:*"
   },
   "peerDependencies": {
     "@nestjs/common": "^8.2.5",

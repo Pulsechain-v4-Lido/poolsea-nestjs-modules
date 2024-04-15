@@ -1,4 +1,4 @@
-import { CHAINS } from '@lido-nestjs/constants';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const STAKING_ROUTER_CONTRACT_TOKEN = Symbol('stakingRouterContract');
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { ImplementsAtRuntime } from '@lido-nestjs/di';
-import { CHAINS } from '@lido-nestjs/constants';
+import { ImplementsAtRuntime } from '@poolsea-nestjs/di';
+import { CHAINS } from '@poolsea-nestjs/constants';
 import { GenesisForkVersionServiceInterface } from '../interfaces';
 import { GENESIS_FORK_VERSION } from '../constants/constants';
 

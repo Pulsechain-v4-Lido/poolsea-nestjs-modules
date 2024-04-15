@@ -5,12 +5,12 @@ import {
   LidoKey,
   LidoKeyValidatorInterface,
   LidoKeyValidatorModule,
-} from '@lido-nestjs/key-validation';
-import { LidoContractModule } from '@lido-nestjs/contracts';
+} from '@poolsea-nestjs/key-validation';
+import { LidoContractModule } from '@poolsea-nestjs/contracts';
 import {
   SimpleFallbackJsonRpcBatchProvider,
   FallbackProviderModule,
-} from '@lido-nestjs/execution';
+} from '@poolsea-nestjs/execution';
 
 export class Example {
   public constructor(

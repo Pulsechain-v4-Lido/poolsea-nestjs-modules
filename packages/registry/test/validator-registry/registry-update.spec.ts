@@ -5,7 +5,7 @@ import {
   LoggerModule,
   LOGGER_PROVIDER,
   MockLoggerModule,
-} from '@lido-nestjs/logger';
+} from '@poolsea-nestjs/logger';
 import { getNetwork } from '@ethersproject/networks';
 import { JsonRpcBatchProvider } from '@ethersproject/providers';
 import {

@@ -1,4 +1,4 @@
-import { CHAINS } from '@lido-nestjs/constants';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const ACCOUNTING_ORACLE_HASH_CONSENSUS_TOKEN = Symbol(
   'accountingOracleHashConsensus',

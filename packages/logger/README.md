@@ -8,7 +8,7 @@ The logger is based on [winston logger](https://github.com/winstonjs/winston) an
 ## Install
 
 ```bash
-yarn add @lido-nestjs/logger
+yarn add @poolsea-nestjs/logger
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ yarn add @lido-nestjs/logger
 
 ```ts
 import { Module } from '@nestjs/common';
-import { LoggerModule, jsonTransport } from '@lido-nestjs/logger';
+import { LoggerModule, jsonTransport } from '@poolsea-nestjs/logger';
 
 @Module({
   imports: [
@@ -34,7 +34,7 @@ export class AppModule {}
 
 ```ts
 import { Module } from '@nestjs/common';
-import { LoggerModule, jsonTransport } from '@lido-nestjs/logger';
+import { LoggerModule, jsonTransport } from '@poolsea-nestjs/logger';
 import { ConfigModule, ConfigService } from './example';
 
 @Module({
@@ -54,10 +54,10 @@ export class AppModule {}
 
 ## Transports
 
-The logger provides preconfigured console transports in `json` and `simple` formats. The transports can be imported from `@lido-nestjs/logger`:
+The logger provides preconfigured console transports in `json` and `simple` formats. The transports can be imported from `@poolsea-nestjs/logger`:
 
 ```ts
-import { simpleTransport, jsonTransport } from '@lido-nestjs/logger';
+import { simpleTransport, jsonTransport } from '@poolsea-nestjs/logger';
 ```
 
 ### Secrets cleaner
@@ -66,7 +66,7 @@ Preconfigured transports have formatter for clean secrets from logs. To use it, 
 
 ```ts
 import { Module } from '@nestjs/common';
-import { LoggerModule, simpleTransport } from '@lido-nestjs/logger';
+import { LoggerModule, simpleTransport } from '@poolsea-nestjs/logger';
 
 const PRIVATE_KEY = '0x000000000000';
 const secrets = [PRIVATE_KEY];
@@ -84,10 +84,10 @@ export class AppModule {}
 
 Secrets will be replaced with text `<removed>`.
 
-If you want to use this formatter in your custom transport, import the `cleanSecrets` from `@lido-nestjs/logger`:
+If you want to use this formatter in your custom transport, import the `cleanSecrets` from `@poolsea-nestjs/logger`:
 
 ```ts
-import { cleanSecrets } from '@lido-nestjs/logger';
+import { cleanSecrets } from '@poolsea-nestjs/logger';
 
 const myFormatter = winston.format.combine(
   cleanSecrets({ secrets: ['some-secret'] }),
@@ -105,7 +105,7 @@ Meta fields can be useful for adding additional fields to logs, such as `blockNu
 
 ```ts
 import { Module } from '@nestjs/common';
-import { LoggerModule, jsonTransport } from '@lido-nestjs/logger';
+import { LoggerModule, jsonTransport } from '@poolsea-nestjs/logger';
 
 @Module({
   imports: [
@@ -137,7 +137,7 @@ For `simple` transport you can set colors for meta fields by passing `fieldColor
 
 ```ts
 import { Module } from '@nestjs/common';
-import { LoggerModule, simpleTransport } from '@lido-nestjs/logger';
+import { LoggerModule, simpleTransport } from '@poolsea-nestjs/logger';
 
 const fieldColors = { foo: 'blue' };
 

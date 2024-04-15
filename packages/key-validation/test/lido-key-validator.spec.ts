@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CHAINS } from '@lido-nestjs/constants';
-import { LidoContractModule } from '@lido-nestjs/contracts';
+import { CHAINS } from '@poolsea-nestjs/constants';
+import { LidoContractModule } from '@poolsea-nestjs/contracts';
 import {
   currentWC,
   invalidUnusedKey,
@@ -11,7 +11,7 @@ import {
   validUsedKey,
   validUsedKeyCurrentWC,
 } from './fixtures/keys';
-import { range, withTimer } from '@lido-nestjs/utils';
+import { range, withTimer } from '@poolsea-nestjs/utils';
 import {
   Key,
   LidoKey,
@@ -21,7 +21,7 @@ import {
 import { ModuleMetadata } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import { usedValidKeys } from './fixtures/used-valid-keys';
-import { LIDO_CONTRACT_TOKEN } from '@lido-nestjs/contracts';
+import { LIDO_CONTRACT_TOKEN } from '@poolsea-nestjs/contracts';
 
 export const sleep = (ms: number) =>
   new Promise((resolve) => setTimeout(resolve, ms));

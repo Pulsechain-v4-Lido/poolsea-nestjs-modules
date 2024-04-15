@@ -1,4 +1,4 @@
-import { CHAINS } from '@lido-nestjs/constants';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const ARAGON_TOKEN_MANAGER_CONTRACT_TOKEN = Symbol(
   'aragonTokenManagerContract',

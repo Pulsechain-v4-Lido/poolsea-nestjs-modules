@@ -6,7 +6,7 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/registry
+yarn add @poolsea-nestjs/registry
 ```
 
 ## Migrations

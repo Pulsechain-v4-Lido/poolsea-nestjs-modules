@@ -1,6 +1,6 @@
 import { Test } from '@nestjs/testing';
-import { FetchModule } from '@lido-nestjs/fetch';
-import { IpfsGeneralService, IpfsModule } from '@lido-nestjs/ipfs-http-client';
+import { FetchModule } from '@poolsea-nestjs/fetch';
+import { IpfsGeneralService, IpfsModule } from '@poolsea-nestjs/ipfs-http-client';
 import { IpfsNopKeysService, IpfsNopKeysModule } from '../../src';
 
 import {

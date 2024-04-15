@@ -1,5 +1,5 @@
 import { Key, LidoKey } from './common';
-import { createInterface } from '@lido-nestjs/di';
+import { createInterface } from '@poolsea-nestjs/di';
 
 export const LidoKeyValidatorInterface =
   createInterface<LidoKeyValidatorInterface>('LidoKeyValidatorInterface');

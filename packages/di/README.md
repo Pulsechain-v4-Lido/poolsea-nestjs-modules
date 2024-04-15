@@ -6,7 +6,7 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/di
+yarn add @poolsea-nestjs/di
 ```
 
 ## Motivation
@@ -91,7 +91,7 @@ Needed for proper work of `instanceof` operator for class instances.
 ### Basic usage
 
 ```ts
-import { createInterface, ImplementsAtRuntime } from '@lido-nestjs/di';
+import { createInterface, ImplementsAtRuntime } from '@poolsea-nestjs/di';
 
 interface FooInterface {
   foo(): string;
@@ -125,7 +125,7 @@ console.log(foobar instanceof BarInterface === true); // true
 
 ```ts
 // service.interface.ts
-import { createInterface } from '@lido-nestjs/di';
+import { createInterface } from '@poolsea-nestjs/di';
 
 export interface ServiceInterface {
   doSmth(): string;
@@ -136,7 +136,7 @@ export const ServiceInterface = createInterface<ServiceInterface>('ServiceInterf
 
 ```ts
 // service.ts
-import { ImplementsAtRuntime } from '@lido-nestjs/di';
+import { ImplementsAtRuntime } from '@poolsea-nestjs/di';
 import { Injectable } from '@nestjs/common';
 
 // here, we are importing the type and the constant in one variable 'ServiceInterface'

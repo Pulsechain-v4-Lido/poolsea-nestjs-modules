@@ -1,5 +1,5 @@
 import { Test } from '@nestjs/testing';
-import { Registry__factory } from '@lido-nestjs/contracts';
+import { Registry__factory } from '@poolsea-nestjs/contracts';
 import { getNetwork } from '@ethersproject/networks';
 import { Interface } from '@ethersproject/abi';
 import { getDefaultProvider } from '@ethersproject/providers';

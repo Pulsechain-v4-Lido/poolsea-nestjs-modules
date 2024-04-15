@@ -1,5 +1,5 @@
 {
-  "name": "@lido-nestjs/execution",
+  "name": "@poolsea-nestjs/execution",
   "version": "0.0.0-semantic-release",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,9 +15,9 @@
   },
   "sideEffects": false,
   "keywords": [
-    "lido",
-    "lido-nestjs",
-    "lido-nestjs-modules",
+    "poolsea",
+    "poolsea-nestjs",
+    "poolsea-nestjs-modules",
     "lidofinance",
     "execution",
     "execution-layer",
@@ -41,8 +41,8 @@
     "@ethersproject/properties": "^5.5.0",
     "@ethersproject/providers": "^5.5.3",
     "@ethersproject/web": "^5.5.1",
-    "@lido-nestjs/logger": "workspace:*",
-    "@lido-nestjs/middleware": "workspace:*"
+    "@poolsea-nestjs/logger": "workspace:*",
+    "@poolsea-nestjs/middleware": "workspace:*"
   },
   "peerDependencies": {
     "@nestjs/common": "^8.2.5",

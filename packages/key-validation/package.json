@@ -1,5 +1,5 @@
 {
-  "name": "@lido-nestjs/key-validation",
+  "name": "@poolsea-nestjs/key-validation",
   "version": "0.0.0-semantic-release",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,9 +15,9 @@
   },
   "sideEffects": false,
   "keywords": [
-    "lido",
-    "lido-nestjs",
-    "lido-nestjs-modules",
+    "poolsea",
+    "poolsea-nestjs",
+    "poolsea-nestjs-modules",
     "lidofinance"
   ],
   "files": [
@@ -30,10 +30,10 @@
   "dependencies": {
     "@chainsafe/blst": "0.2.4",
     "@chainsafe/ssz": "0.9.2",
-    "@lido-nestjs/constants": "workspace:*",
-    "@lido-nestjs/contracts": "workspace:*",
-    "@lido-nestjs/di": "workspace:*",
-    "@lido-nestjs/utils": "workspace:*",
+    "@poolsea-nestjs/constants": "workspace:*",
+    "@poolsea-nestjs/contracts": "workspace:*",
+    "@poolsea-nestjs/di": "workspace:*",
+    "@poolsea-nestjs/utils": "workspace:*",
     "piscina": "3.2.0"
   },
   "peerDependencies": {

@@ -1,4 +1,4 @@
-import { CHAINS } from '@lido-nestjs/constants';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const VALIDATORS_EXIT_BUS_ORACLE_HASH_CONSENSUS_TOKEN = Symbol(
   'validatorsExitBusOracleHashConsensus',

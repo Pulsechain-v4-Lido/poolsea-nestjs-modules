@@ -5,7 +5,7 @@ import {
   BatchProviderModule,
   SimpleFallbackJsonRpcBatchProvider,
 } from '../src';
-import { nullTransport, LoggerModule } from '@lido-nestjs/logger';
+import { nullTransport, LoggerModule } from '@poolsea-nestjs/logger';
 
 describe('Module sync initializing', () => {
   describe('BatchProviderModule', () => {

@@ -1,4 +1,4 @@
-import { CHAINS } from '@lido-nestjs/constants';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const ALLOWED_LIST_CONTRACT_TOKEN = Symbol('allowedListContract');
 

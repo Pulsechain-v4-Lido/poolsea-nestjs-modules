@@ -1,4 +1,4 @@
-import { createInterface } from '@lido-nestjs/di';
+import { createInterface } from '@poolsea-nestjs/di';
 import { ConsensusValidatorsAndMetadata, ConsensusMeta } from '../types';
 import { BlockId } from './block-id';
 import { FilterQuery, FindOptions } from '@mikro-orm/core';

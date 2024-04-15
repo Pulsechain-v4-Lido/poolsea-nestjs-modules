@@ -1,4 +1,4 @@
-import { CHAINS } from '@lido-nestjs/constants';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const ORACLE_REPORT_SANITY_CHECKER_TOKEN = Symbol(
   'oracleReportSanityChecker',

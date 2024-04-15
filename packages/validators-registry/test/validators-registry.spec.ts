@@ -11,8 +11,8 @@ import {
 } from '../src';
 import { MikroORM } from '@mikro-orm/core';
 import { migrations } from './helpers/migrations';
-import { ConsensusModule, ConsensusService } from '@lido-nestjs/consensus';
-import { FetchModule } from '@lido-nestjs/fetch';
+import { ConsensusModule, ConsensusService } from '@poolsea-nestjs/consensus';
+import { FetchModule } from '@poolsea-nestjs/fetch';
 import {
   blocks,
   consensusMetaA,

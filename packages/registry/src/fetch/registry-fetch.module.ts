@@ -2,7 +2,7 @@ import { DynamicModule, Module } from '@nestjs/common';
 import {
   LidoContractModule,
   RegistryContractModule,
-} from '@lido-nestjs/contracts';
+} from '@poolsea-nestjs/contracts';
 import {
   RegistryFetchModuleSyncOptions,
   RegistryFetchModuleAsyncOptions,

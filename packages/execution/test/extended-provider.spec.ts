@@ -7,9 +7,9 @@ import {
   makeFetchImplWithSpecificFeeHistory,
 } from './fixtures/fake-json-rpc';
 import { range } from './utils';
-import { nullTransport, LoggerModule } from '@lido-nestjs/logger';
+import { nullTransport, LoggerModule } from '@poolsea-nestjs/logger';
 import { JsonRpcRequest, JsonRpcResponse, FetchError } from '../src';
-import { MiddlewareCallback } from '@lido-nestjs/middleware';
+import { MiddlewareCallback } from '@poolsea-nestjs/middleware';
 
 type MockedExtendedJsonRpcBatchProvider = ExtendedJsonRpcBatchProvider & {
   fetchJson: (

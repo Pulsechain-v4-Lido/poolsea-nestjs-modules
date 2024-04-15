@@ -1,4 +1,4 @@
-import { CHAINS } from '@lido-nestjs/constants';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const LDO_CONTRACT_TOKEN = Symbol('ldoContract');
 

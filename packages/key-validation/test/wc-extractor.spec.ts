@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { currentWC } from './fixtures/keys';
-import { withTimer } from '@lido-nestjs/utils';
+import { withTimer } from '@poolsea-nestjs/utils';
 import {
   bufferFromHexString,
   WithdrawalCredentialsExtractorInterface,
   WithdrawalCredentialsFetcher,
 } from '../src';
-import { Lido } from '@lido-nestjs/contracts';
-import { CHAINS } from '@lido-nestjs/constants';
+import { Lido } from '@poolsea-nestjs/contracts';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const sleep = (ms: number) =>
   new Promise((resolve) => setTimeout(resolve, ms));

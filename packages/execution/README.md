@@ -6,7 +6,7 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/execution
+yarn add @poolsea-nestjs/execution
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ yarn add @lido-nestjs/execution
 ```ts
 // Import
 import { Injectable, Module } from '@nestjs/common';
-import { FallbackProviderModule } from '@lido-nestjs/execution';
+import { FallbackProviderModule } from '@poolsea-nestjs/execution';
 import { MyService } from './my.service';
 
 @Module({
@@ -34,7 +34,7 @@ import { MyService } from './my.service';
 export class MyModule {}
 
 // Usage
-import { SimpleFallbackJsonRpcBatchProvider } from '@lido-nestjs/execution';
+import { SimpleFallbackJsonRpcBatchProvider } from '@poolsea-nestjs/execution';
 
 @Injectable
 export class MyService {
@@ -50,7 +50,7 @@ export class MyService {
 
 ```ts
 import { Module } from '@nestjs/common';
-import { FallbackProviderModule } from '@lido-nestjs/execution';
+import { FallbackProviderModule } from '@poolsea-nestjs/execution';
 import { ConfigModule, ConfigService } from './my.service';
 
 @Module({
@@ -71,7 +71,7 @@ import { ConfigModule, ConfigService } from './my.service';
 export class MyModule {}
 
 // Usage
-import { SimpleFallbackJsonRpcBatchProvider } from '@lido-nestjs/execution';
+import { SimpleFallbackJsonRpcBatchProvider } from '@poolsea-nestjs/execution';
 
 @Injectable
 export class MyService {

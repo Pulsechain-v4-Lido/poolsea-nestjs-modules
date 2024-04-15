@@ -1,6 +1,6 @@
-import { createInterface } from '@lido-nestjs/di';
+import { createInterface } from '@poolsea-nestjs/di';
 import { PossibleWC, WithdrawalCredentialsHex } from './common';
-import { CHAINS } from '@lido-nestjs/constants';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 export const WithdrawalCredentialsExtractorInterface =
   createInterface<WithdrawalCredentialsExtractorInterface>(

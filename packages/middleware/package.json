@@ -1,5 +1,5 @@
 {
-  "name": "@lido-nestjs/middleware",
+  "name": "@poolsea-nestjs/middleware",
   "version": "0.0.0-semantic-release",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,9 +15,9 @@
   },
   "sideEffects": false,
   "keywords": [
-    "lido",
-    "lido-nestjs",
-    "lido-nestjs-modules",
+    "poolsea",
+    "poolsea-nestjs",
+    "poolsea-nestjs-modules",
     "lidofinance"
   ],
   "files": [

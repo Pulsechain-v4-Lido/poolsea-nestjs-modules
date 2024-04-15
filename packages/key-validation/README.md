@@ -6,7 +6,7 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/key-validation
+yarn add @poolsea-nestjs/key-validation
 ```
 
 ## Usage
@@ -20,8 +20,8 @@ import {
   Key,
   KeyValidatorInterface,
   GENESIS_FORK_VERSION,
-} from '@lido-nestjs/key-validation';
-import { CHAINS } from '@lido-nestjs/constants';
+} from '@poolsea-nestjs/key-validation';
+import { CHAINS } from '@poolsea-nestjs/constants';
 
 @Module({
   imports: [KeyValidatorModule.forFeature({ multithreaded: true })], //
@@ -63,12 +63,12 @@ import {
   LidoKey,
   LidoKeyValidatorInterface,
   LidoKeyValidatorModule,
-} from '@lido-nestjs/key-validation';
-import { LidoContractModule } from '@lido-nestjs/contracts';
+} from '@poolsea-nestjs/key-validation';
+import { LidoContractModule } from '@poolsea-nestjs/contracts';
 import {
   SimpleFallbackJsonRpcBatchProvider,
   FallbackProviderModule,
-} from '@lido-nestjs/execution';
+} from '@poolsea-nestjs/execution';
 
 export class Example {
   public constructor(

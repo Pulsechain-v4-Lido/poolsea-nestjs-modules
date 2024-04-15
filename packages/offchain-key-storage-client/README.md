@@ -6,14 +6,14 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/offchain-key-storage-client
+yarn add @poolsea-nestjs/offchain-key-storage-client
 ```
 
 ## Ipfs
 
 ### Usage
 
-This module depends on `IpfsModule` from `@lido-nestjs/ipfs-http-client`, so you need to provide it as a global module or import it into `IpfsNopKeysModule`.
+This module depends on `IpfsModule` from `@poolsea-nestjs/ipfs-http-client`, so you need to provide it as a global module or import it into `IpfsNopKeysModule`.
 
 ### IpfsModule
 
@@ -73,7 +73,7 @@ export class MyModule {}
 ```ts
 // Import
 import { Module } from '@nestjs/common';
-import { NopMerkleTreeModule } from '@lido-nestjs/offchain-key-storage-client';
+import { NopMerkleTreeModule } from '@poolsea-nestjs/offchain-key-storage-client';
 import { MyService } from './my.service';
 
 @Module({
@@ -87,7 +87,7 @@ export class MyModule {}
 import {
   NopMerkleTreeService,
   KeySignBuffer,
-} from '@lido-nestjs/offchain-key-storage-client';
+} from '@poolsea-nestjs/offchain-key-storage-client';
 
 export class MyService {
   constructor(private nopMerkleTreeService: NopMerkleTreeService) {}

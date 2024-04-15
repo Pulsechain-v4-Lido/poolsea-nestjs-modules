@@ -11,7 +11,7 @@ import {
   LidoKeyValidatorInterface,
   WithdrawalCredentialsExtractorInterface,
 } from './interfaces';
-import { LidoContractModule } from '@lido-nestjs/contracts';
+import { LidoContractModule } from '@poolsea-nestjs/contracts';
 
 export const getDefaultLidoKeyValidatorModuleProviders = (): Provider[] => [
   {

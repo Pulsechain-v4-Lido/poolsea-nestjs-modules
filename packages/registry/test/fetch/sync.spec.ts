@@ -4,8 +4,8 @@ import { getNetwork } from '@ethersproject/networks';
 import { hexZeroPad } from '@ethersproject/bytes';
 import { getDefaultProvider, Provider } from '@ethersproject/providers';
 import { RegistryFetchModule, RegistryFetchService } from '../../src';
-import { LIDO_CONTRACT_TOKEN, Lido } from '@lido-nestjs/contracts';
-import { REGISTRY_CONTRACT_TOKEN, Registry } from '@lido-nestjs/contracts';
+import { LIDO_CONTRACT_TOKEN, Lido } from '@poolsea-nestjs/contracts';
+import { REGISTRY_CONTRACT_TOKEN, Registry } from '@poolsea-nestjs/contracts';
 
 describe('Sync module initializing', () => {
   const provider = getDefaultProvider(process.env.EL_RPC_URL);

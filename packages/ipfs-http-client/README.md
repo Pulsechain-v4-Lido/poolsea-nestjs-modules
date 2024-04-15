@@ -6,22 +6,22 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/ipfs-http-client
+yarn add @poolsea-nestjs/ipfs-http-client
 ```
 
 ## Ipfs
 
 ### Usage
 
-This module depends on `FetchModule` from `@lido-nestjs/fetch`, so you need to provide it as a global module or import it into `IpfsModule`.
+This module depends on `FetchModule` from `@poolsea-nestjs/fetch`, so you need to provide it as a global module or import it into `IpfsModule`.
 
 #### Sync usage
 
 ```ts
 // Import
 import { Module } from '@nestjs/common';
-import { IpfsModule } from '@lido-nestjs/offchain-key-storage-client';
-import { FetchModule } from '@lido-nestjs/fetch';
+import { IpfsModule } from '@poolsea-nestjs/offchain-key-storage-client';
+import { FetchModule } from '@poolsea-nestjs/fetch';
 import { MyService } from './my.service';
 
 @Module({
@@ -39,7 +39,7 @@ import { MyService } from './my.service';
 export class MyModule {}
 
 // Provider usage
-import { IpfsGeneralService } from '@lido-nestjs/offchain-key-storage-client';
+import { IpfsGeneralService } from '@poolsea-nestjs/offchain-key-storage-client';
 
 export class MyService {
   constructor(private ipfsService: IpfsGeneralService) {}
@@ -80,8 +80,8 @@ export class MyModule {}
 
 ```ts
 import { Module } from '@nestjs/common';
-import { IpfsModule } from '@lido-nestjs/offchain-key-storage-client';
-import { FetchModule } from '@lido-nestjs/fetch';
+import { IpfsModule } from '@poolsea-nestjs/offchain-key-storage-client';
+import { FetchModule } from '@poolsea-nestjs/fetch';
 
 @Module({
   imports: [

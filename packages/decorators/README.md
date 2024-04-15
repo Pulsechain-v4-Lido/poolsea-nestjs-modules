@@ -6,7 +6,7 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/decorators
+yarn add @poolsea-nestjs/decorators
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ yarn add @lido-nestjs/decorators
 The decorator does not allow to call the method more than once at a time.
 
 ```ts
-import { OneAtTime } from '@lido-nestjs/decorators';
+import { OneAtTime } from '@poolsea-nestjs/decorators';
 
 export class TestService {
   @OneAtTime()

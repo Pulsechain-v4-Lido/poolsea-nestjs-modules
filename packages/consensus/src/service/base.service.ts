@@ -1,7 +1,7 @@
 import snakeCase from 'lodash.snakecase';
 import { RequestInit } from 'node-fetch';
 import { AbortController } from 'node-abort-controller';
-import { FetchService } from '@lido-nestjs/fetch';
+import { FetchService } from '@poolsea-nestjs/fetch';
 import { Inject, Injectable, Optional } from '@nestjs/common';
 import {
   CONSENSUS_OPTIONS_TOKEN,
@@ -12,6 +12,7 @@ import { ConsensusMethodArgs } from '../interfaces/consensus.interface';
 import { ConsensusModuleOptions } from '../interfaces/module.interface';
 import { ConsensusSubscribeCallback } from '../interfaces/subscribe.interface';
 import { ConsensusService } from '../service/consensus.service';
+import {AbortSignal} from "node-fetch/externals";
 
 @Injectable()
 export class ConsensusBaseService {
@@ -105,7 +106,7 @@ export class ConsensusBaseService {
         const { data } = await this.getBlock({
           blockId: 'head',
           ...args,
-          options: { ...args?.options, signal },
+          options: { ...args?.options, signal: signal as AbortSignal },
         });
 
         const fetchedSlot = Number(data?.message?.slot);

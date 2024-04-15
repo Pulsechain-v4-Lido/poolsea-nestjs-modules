@@ -6,7 +6,7 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/contracts
+yarn add @poolsea-nestjs/contracts
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ yarn add @lido-nestjs/contracts
 ```ts
 // Import
 import { Module } from '@nestjs/common';
-import { LidoContractModule } from '@lido-nestjs/contracts';
+import { LidoContractModule } from '@poolsea-nestjs/contracts';
 import { getDefaultProvider } from '@ethersproject/providers';
 import { MyService } from './my.service';
 
@@ -32,7 +32,7 @@ import { MyService } from './my.service';
 export class MyModule {}
 
 // Usage
-import { LIDO_CONTRACT_TOKEN, Lido } from '@lido-nestjs/contracts';
+import { LIDO_CONTRACT_TOKEN, Lido } from '@poolsea-nestjs/contracts';
 import { Inject } from '@nestjs/common';
 
 export class MyService {
@@ -56,7 +56,7 @@ LidoContractModule.forFeature({
 
 ```ts
 import { Module } from '@nestjs/common';
-import { LidoContractModule } from '@lido-nestjs/contracts';
+import { LidoContractModule } from '@poolsea-nestjs/contracts';
 
 @Module({
   imports: [LidoContractModule.forRoot()],
@@ -68,7 +68,7 @@ export class MyModule {}
 
 ```ts
 import { Module } from '@nestjs/common';
-import { LidoContractModule } from '@lido-nestjs/contracts';
+import { LidoContractModule } from '@poolsea-nestjs/contracts';
 import { ConfigModule, ConfigService } from './config.service';
 
 @Module({
@@ -88,7 +88,7 @@ export class MyModule {}
 
 ```ts
 import { Module } from '@nestjs/common';
-import { LidoContractModule } from '@lido-nestjs/contracts';
+import { LidoContractModule } from '@poolsea-nestjs/contracts';
 import { ProviderModule } from './provider.service';
 
 @Module({

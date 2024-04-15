@@ -7,7 +7,7 @@ import {
   Module,
   ModuleMetadata,
 } from '@nestjs/common';
-import { FetchModule } from '@lido-nestjs/fetch';
+import { FetchModule } from '@poolsea-nestjs/fetch';
 import { Test } from '@nestjs/testing';
 import { ConsensusModule, ConsensusService } from '../src';
 

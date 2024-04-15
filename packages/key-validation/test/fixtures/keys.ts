@@ -4,8 +4,8 @@ import {
   Key,
   WITHDRAWAL_CREDENTIALS,
 } from '../../src';
-import { CHAINS } from '@lido-nestjs/constants';
-import { range } from '@lido-nestjs/utils';
+import { CHAINS } from '@poolsea-nestjs/constants';
+import { range } from '@poolsea-nestjs/utils';
 import { usedValidKeys } from './used-valid-keys';
 
 export const genesisForkVersion: Buffer =

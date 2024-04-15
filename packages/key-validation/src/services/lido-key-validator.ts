@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { ImplementsAtRuntime } from '@lido-nestjs/di';
+import { ImplementsAtRuntime } from '@poolsea-nestjs/di';
 import {
   GenesisForkVersionServiceInterface,
   Key,

@@ -5,12 +5,12 @@ import {
 } from '../interfaces';
 import 'reflect-metadata';
 import { Inject, Injectable } from '@nestjs/common';
-import { ImplementsAtRuntime } from '@lido-nestjs/di';
-import { CHAINS } from '@lido-nestjs/constants';
-import { Lido, LIDO_CONTRACT_TOKEN } from '@lido-nestjs/contracts';
+import { ImplementsAtRuntime } from '@poolsea-nestjs/di';
+import { CHAINS } from '@poolsea-nestjs/constants';
+import { Lido, LIDO_CONTRACT_TOKEN } from '@poolsea-nestjs/contracts';
 import { WITHDRAWAL_CREDENTIALS } from '../constants/constants';
 import { bufferFromHexString } from '../common/buffer-hex';
-import { MemoizeInFlightPromise } from '@lido-nestjs/utils';
+import { MemoizeInFlightPromise } from '@poolsea-nestjs/utils';
 
 @Injectable()
 @ImplementsAtRuntime(WithdrawalCredentialsExtractorInterface)

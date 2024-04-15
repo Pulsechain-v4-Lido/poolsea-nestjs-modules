@@ -6,7 +6,7 @@ Part of [Lido NestJS Modules](https://github.com/lidofinance/lido-nestjs-modules
 ## Install
 
 ```bash
-yarn add @lido-nestjs/middleware
+yarn add @poolsea-nestjs/middleware
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ yarn add @lido-nestjs/middleware
 ```ts
 // Import
 import { Module } from '@nestjs/common';
-import { MiddlewareModule } from '@lido-nestjs/middleware';
+import { MiddlewareModule } from '@poolsea-nestjs/middleware';
 import { MyService } from './my.service';
 
 @Module({
@@ -37,7 +37,7 @@ import { MyService } from './my.service';
 export class MyModule {}
 
 // Usage
-import { MiddlewareService } from '@lido-nestjs/middleware';
+import { MiddlewareService } from '@poolsea-nestjs/middleware';
 
 export class MyService {
   constructor(private middlewareService: MiddlewareService) {}
@@ -55,8 +55,8 @@ export class MyService {
 ```ts
 // Import
 import { Module } from '@nestjs/common';
-import { LoggerModule } from '@lido-nestjs/logger';
-import { MiddlewareModule } from '@lido-nestjs/middleware';
+import { LoggerModule } from '@poolsea-nestjs/logger';
+import { MiddlewareModule } from '@poolsea-nestjs/middleware';
 import { MyService } from './my.service';
 
 @Module({
@@ -83,7 +83,7 @@ import { MyService } from './my.service';
 export class MyModule {}
 
 // Usage
-import { MiddlewareService } from '@lido-nestjs/middleware';
+import { MiddlewareService } from '@poolsea-nestjs/middleware';
 
 export class MyService {
   constructor(
